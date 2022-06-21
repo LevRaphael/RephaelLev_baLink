@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weatherApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Info Weather</h2>
+        <div class="header">
+            <div class="btn-back" id="btnBack" onclick="backHP()"><i class="arrow left"></i>--</div>
+            <div class="container-select">
+                <div class="select">
+                    <select name="languages" id="languages-select" onchange="getGeolocalisation()">
+                        <option value="en">English</option>
+                        <option value="he">Hebrew</option>
+                    </select>
+                </div>
+            
+                <div class="select">
+                    <select name="cities" id="cities-select" onchange="getGeolocalisation()">
+                        <option value="New York">New York</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value=" Marseille"> Marseille</option>
+                        <option value="Barcelona">Barcelona</option>
+                        <option value="Rome">Rome</option>
+                    </select>
+                </div>
+            </div>
+            <div class="local-time-information"></div>
+        </div>
+        <h1 id="city" class="city"></h1>
+        <div class="container-weather"></div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
